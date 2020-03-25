@@ -7,13 +7,17 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
 
+	@ObservedObject var locationViewModel = LocationViewModel()
+
 	var body: some View {
-		ZStack {
-			Text("Fetching content").offset(y: -350)
-			LoadingSpinner()
+		VStack {
+			MapView(coordinate: self.locationViewModel.currentLocation.coordinate)
+			Spacer()
+			Text("(\(self.locationViewModel.currentLocation.coordinate.latitude), \(self.locationViewModel.currentLocation.coordinate.longitude))")
 		}
 	}
 }
