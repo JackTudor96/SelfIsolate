@@ -40,6 +40,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
 	static var previews: some View {
-		MapView(coordinate: CLLocationCoordinate2DMake(35.682117, 139.774669))
+		MapView(coordinate: CLLocationCoordinate2DMake(51.483410, -9.373060))
 	}
 }
