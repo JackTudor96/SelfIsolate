@@ -15,6 +15,8 @@
 		BCD4D967242B1AB900A56041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD4D965242B1AB900A56041 /* LaunchScreen.storyboard */; };
 		BCD4D972242B1AB900A56041 /* SelfIsolateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4D971242B1AB900A56041 /* SelfIsolateTests.swift */; };
 		BCD4D97D242B201A00A56041 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4D97C242B201A00A56041 /* LoadingSpinner.swift */; };
+		BCD4D983242B281B00A56041 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4D982242B281B00A56041 /* MapView.swift */; };
+		BCD4D98A242B2D4100A56041 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4D989242B2D4100A56041 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		BCD4D971242B1AB900A56041 /* SelfIsolateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfIsolateTests.swift; sourceTree = "<group>"; };
 		BCD4D973242B1AB900A56041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD4D97C242B201A00A56041 /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		BCD4D982242B281B00A56041 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BCD4D989242B2D4100A56041 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,9 @@
 		BCD4D959242B1AB700A56041 /* SelfIsolate */ = {
 			isa = PBXGroup;
 			children = (
-				BCD4D97F242B204C00A56041 /* Supporting Files */,
 				BCD4D97E242B203E00A56041 /* Views */,
+				BCD4D988242B2D3400A56041 /* Models */,
+				BCD4D97F242B204C00A56041 /* Supporting Files */,
 				BCD4D960242B1AB900A56041 /* Assets.xcassets */,
 				BCD4D968242B1AB900A56041 /* Info.plist */,
 				BCD4D962242B1AB900A56041 /* Preview Content */,
@@ -112,6 +117,7 @@
 			children = (
 				BCD4D97C242B201A00A56041 /* LoadingSpinner.swift */,
 				BCD4D95E242B1AB700A56041 /* ContentView.swift */,
+				BCD4D982242B281B00A56041 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,6 +130,14 @@
 				BCD4D95C242B1AB700A56041 /* SceneDelegate.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCD4D988242B2D3400A56041 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4D989242B2D4100A56041 /* LocationViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +243,9 @@
 			files = (
 				BCD4D97D242B201A00A56041 /* LoadingSpinner.swift in Sources */,
 				BCD4D95B242B1AB700A56041 /* AppDelegate.swift in Sources */,
+				BCD4D983242B281B00A56041 /* MapView.swift in Sources */,
 				BCD4D95D242B1AB700A56041 /* SceneDelegate.swift in Sources */,
+				BCD4D98A242B2D4100A56041 /* LocationViewModel.swift in Sources */,
 				BCD4D95F242B1AB700A56041 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
