@@ -29,7 +29,8 @@ final class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDele
 	}
 
 	func locationManager(_: CLLocationManager, didUpdateLocations: [CLLocation]) {
-		currentLocation = didUpdateLocations.last!
+		guard let usersLastKnowLocation = didUpdateLocations.last else { return }
+		currentLocation = usersLastKnowLocation
 	}
 
 	// TODO: Enable background tracking
