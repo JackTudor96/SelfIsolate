@@ -37,9 +37,3 @@ struct MapView: UIViewRepresentable {
 		mapView.addAnnotation(annotation)
 	}
 }
-
-struct MapView_Previews: PreviewProvider {
-	static var previews: some View {
-		MapView(coordinate: CLLocationCoordinate2DMake(51.483410, -9.373060))
-	}
-}

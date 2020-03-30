@@ -17,7 +17,7 @@ struct ContentView: View {
 		VStack {
 			MapView(coordinate: self.locationViewModel.currentLocation.coordinate)
 			Spacer()
-			Text("(\(self.locationViewModel.currentLocation.coordinate.latitude), \(self.locationViewModel.currentLocation.coordinate.longitude))")
+			Text("(\(self.locationViewModel.currentLocation.coordinate.latitude), \(self.locationViewModel.currentLocation.coordinate.longitude), with timestamp: \((self.locationViewModel.location?.timestamp.description)!))") // Testing purposes
 		}
 	}
 }
